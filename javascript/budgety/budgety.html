@@ -1,0 +1,189 @@
+ <!-- <!DOCTYPE html>
+<html><head>
+    <title>budgety</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="budgety.css">
+</head>
+<body>
+  <header>
+     
+         
+    <div class="top">
+      <div class="budget">
+          <div id="sum"></div>
+          <div class="budget__title">
+    Available Budget in <span class="budget__title--month">%Month%</span>:
+</div>
+<div class="budget__value"><h1>+ 2,345.64</h1></div>
+<center><div class="income__top">
+ <div class="income__text" id="income__text">INCOME</div>
+    <div class="right">
+    <div class="income__value" id="income__value">+4,3234.64</div>
+    <div claas="income__percent" id="income__percent">&nbsp;</div></center>
+</div>
+</div>
+
+<div class="budget__top">
+  <center><div class="expenses__top">
+    <div class="expenses__text" id="expenses__text">EXPENSES</div>
+    <div class="right">
+    <div class="expenses__value" id="expensees__value">- 4,8345.90</div>
+    <div class="expenses__percent">&nbsp;</div></center>
+        </div>
+    </div>
+</div> 
+</header>
+<div class="content">
+    <section id="check">
+        <form><select name="add_type" id="add_type" > 
+            <option value="inc">+</option>
+            <option value="exp">-</option>
+        </select>
+      <input type="text" class="add_description" placeholder="Add description" id="Add description">
+       <input type="number" class="add_number" placeholder="value" id="Add number" >
+       <button class="add_btn"><i class="ion-ios-checkmark-outline"></i></button> 
+        </select>
+        </form></section></div>
+
+<div class="income">
+    <h2 class="income_title">INCOME</h2>
+    <div class="income_list"></div>
+</div>
+
+<div class="expenses">
+    <h2 class="expeneses_title">EXPENSES</h2>
+    <div class="expenses_list"></div>
+</div>
+</div>
+<script src="budgetyscript.js"></script>
+</body>
+</html>  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="budgety.css">
+        <title>Budgety</title>
+    </head>
+    <body>
+        
+        <div class="top">
+            <div class="budget">
+                <div class="budget__title">
+                    Available Budget in <span class="budget__title--month">%Month%</span>:
+                </div>
+                
+                <div class="budget__value">+ 2,345.64</div>
+                
+               <center> <div class="budget__income clearfix">
+                    <div class="budget__income--text">Income</div>
+                    <div class="right">
+                        <div class="budget__income--value">+ 4,300.00</div>
+                        <div class="budget__income--percentage">&nbsp;</div>
+                    </div>
+                </div></center>
+                
+            <center><div class="budget__expenses clearfix">
+                    <div class="budget__expenses--text">Expenses</div>
+                    <div class="right clearfix">
+                        <div class="budget__expenses--value">- 1,954.36</div>
+                        <div class="budget__expenses--percentage">45%</div>
+                    </div>
+                </div></center>
+            </div>
+        </div>
+        
+        
+        
+        <div class="bottom">
+            <div class="add">
+                <div class="add__container">
+                    <select class="add__type">
+                        <option value="inc" selected>+</option>
+                        <option value="exp">-</option>
+                    </select>
+                    <input type="text" class="add__description" placeholder="Add description">
+                    <input type="number" class="add__value" placeholder="Value">
+                    <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+            
+            <div class="container clearfix">
+                <div class="income">
+                    <h2 class="income__title">Income</h2>
+                    
+                    <div class="income__list">
+                       
+<!--                         
+                        <div class="item clearfix" id="income-0">
+                            <div class="item__description">Salary</div>
+                            <div class="right clearfix">
+                                <div class="item__value">+ 2,100.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn">
+                                        <i class="ion-ios-close-outline"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item clearfix" id="income-1">
+                            <div class="item__description">Sold car</div>
+                            <div class="right clearfix">
+                                <div class="item__value">+ 1,500.00</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                                              
+                    </div>
+                </div> -->
+                
+                
+                
+                <div class="expenses">
+                    <h2 class="expenses__title">Expenses</h2>
+                    
+                    <div class="expenses__list"> 
+                       
+                      
+                        <!-- <div class="item clearfix" id="expense-0">
+                            <div class="item__description">Apartment rent</div>
+                            <div class="right clearfix">
+                                <div class="item__value">- 900.00</div>
+                                <div class="item__percentage">21%</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item clearfix" id="expense-1">
+                            <div class="item__description">Grocery shopping</div>
+                            <div class="right clearfix">
+                                <div class="item__value">- 435.28</div>
+                                <div class="item__percentage">10%</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>-->
+                            </div>
+                        </div>
+                          
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <script src="budgetyscript.js"></script>
+    </body>
+</html> 
